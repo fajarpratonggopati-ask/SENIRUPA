@@ -1,0 +1,518 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#315f55">
+  <meta name="description" content="Modul interaktif Seni Rupa kelas 3 tentang komposisi, keseimbangan, prinsip seni rupa, aktivitas, kuis, dan refleksi.">
+  <title>Petualangan Komposisi - Seni Rupa Kelas 3</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="sky-glow" aria-hidden="true"></div>
+  <div class="floating-leaves" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+
+  <header class="toolbar" aria-label="Alat belajar">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">✦</span>
+      <div>
+        <strong>Petualangan Komposisi</strong>
+        <span>Seni Rupa · Kelas 3</span>
+      </div>
+    </div>
+    <div class="toolbar-actions">
+      <button class="tool-button" id="toc-button" type="button" aria-haspopup="dialog">
+        <span aria-hidden="true">☰</span><span>Daftar Isi</span>
+      </button>
+      <button class="tool-button" id="font-button" type="button" aria-pressed="false">
+        <span aria-hidden="true">A+</span><span>Huruf Besar</span>
+      </button>
+      <button class="tool-button" id="read-button" type="button" aria-pressed="false">
+        <span aria-hidden="true">◉</span><span>Bacakan</span>
+      </button>
+      <button class="tool-button icon-only" id="sound-button" type="button" aria-label="Aktifkan atau matikan bunyi halaman" aria-pressed="true">♪</button>
+    </div>
+  </header>
+
+  <main class="reading-stage">
+    <div class="progress-wrap" aria-label="Kemajuan membaca">
+      <div class="progress-copy">
+        <span id="page-label">Sampul</span>
+        <span id="progress-percent">0% selesai</span>
+      </div>
+      <div class="progress-track"><span id="progress-bar"></span></div>
+    </div>
+
+    <div class="book-wrap">
+      <div class="book" id="book" aria-label="Buku digital Petualangan Komposisi">
+        <div class="book-spine" aria-hidden="true"></div>
+
+        <article class="paper" data-sheet="1">
+          <section class="page front cover-page" data-page="1" aria-label="Sampul buku">
+            <img class="cover-image" src="assets/hero-petualangan-komposisi.webp" alt="Anak sedang menyusun potongan kertas warna di taman seni yang cerah">
+            <div class="cover-shade"></div>
+            <div class="cover-content">
+              <span class="eyebrow light">Modul Belajar Interaktif · Kelas 3</span>
+              <h1>Petualangan<br><em>Komposisi</em></h1>
+              <p>Belajar menata bentuk, warna, dan ruang agar karya terasa indah dan seimbang.</p>
+              <button class="start-button" type="button" data-next>Mulai Petualangan <span aria-hidden="true">→</span></button>
+            </div>
+            <div class="cover-badge" aria-label="Lengkap dengan kegiatan dan kuis">20 halaman · aktivitas · kuis</div>
+          </section>
+
+          <section class="page back mission-page" data-page="2" aria-label="Cara menggunakan modul">
+            <div class="page-inner">
+              <div class="page-kicker"><span>01</span> Sebelum Mulai</div>
+              <h2>Misi Seniman Cilik</h2>
+              <p class="lead">Kita akan menjadi penjelajah yang menemukan keseimbangan di rumah, alam, dan karya seni.</p>
+              <div class="goal-list">
+                <div><b>1</b><span><strong>Amati</strong> benda dan lingkungan di sekitarmu.</span></div>
+                <div><b>2</b><span><strong>Kenali</strong> tiga jenis komposisi.</span></div>
+                <div><b>3</b><span><strong>Coba</strong> menyusun bentuk dan warna.</span></div>
+                <div><b>4</b><span><strong>Ceritakan</strong> alasan karyamu terlihat menarik.</span></div>
+              </div>
+              <div class="how-card">
+                <span aria-hidden="true">☝</span>
+                <p><strong>Cara memakai buku:</strong> tekan sudut halaman, tombol panah, atau geser. Jawaban latihan tersimpan otomatis di perangkat ini.</p>
+              </div>
+              <blockquote>“Tidak perlu langsung sempurna. Seniman hebat tumbuh karena berani mencoba.”</blockquote>
+              <span class="page-number">2</span>
+            </div>
+          </section>
+        </article>
+
+        <article class="paper" data-sheet="2">
+          <section class="page front" data-page="3" aria-label="Keseimbangan di sekitar kita">
+            <div class="page-inner">
+              <div class="page-kicker"><span>02</span> Kenali Sekitarmu</div>
+              <h2>Keseimbangan Ada di Mana-mana</h2>
+              <p class="lead">Sesuatu disebut <strong>seimbang</strong> ketika bagian-bagiannya bekerja bersama dengan tepat: tidak berat sebelah dan terasa stabil.</p>
+              <div class="compare-scene">
+                <div class="scene-card balanced">
+                  <div class="chair" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+                  <h3>Kursi seimbang</h3>
+                  <p>Empat kaki utuh dan sama panjang. Kursi berdiri tegak.</p>
+                </div>
+                <div class="scene-card unbalanced">
+                  <div class="chair broken" aria-hidden="true"><i></i><i></i><i></i></div>
+                  <h3>Kursi tidak seimbang</h3>
+                  <p>Satu kaki hilang. Kursi miring dan tidak aman.</p>
+                </div>
+              </div>
+              <div class="nature-note">
+                <span aria-hidden="true">🌱</span>
+                <p><strong>Alam juga perlu seimbang.</strong> Jika hutan dan saluran air jauh lebih sedikit daripada bangunan dan jalan beton, banjir atau longsor lebih mudah terjadi.</p>
+              </div>
+              <details class="think-box">
+                <summary>Pikirkan sebentar</summary>
+                <p>Apa yang dapat kamu lakukan? Menanam dan merawat tanaman, tidak membuang sampah ke saluran air, menghemat kertas, dan menjaga lingkungan tetap bersih.</p>
+              </details>
+              <span class="page-number">3</span>
+            </div>
+          </section>
+
+          <section class="page back" data-page="4" aria-label="Pengertian komposisi dan unsur rupa">
+            <div class="page-inner">
+              <div class="page-kicker"><span>03</span> Dasar Komposisi</div>
+              <h2>Apa Itu Komposisi?</h2>
+              <div class="definition-card">
+                <span class="giant-quote" aria-hidden="true">“</span>
+                <p><strong>Komposisi</strong> adalah cara menyusun dan mengatur unsur-unsur rupa agar menjadi satu karya yang teratur, serasi, mudah dipahami, dan enak dilihat.</p>
+              </div>
+              <p>Bayangkan kamu menata bekal di kotak makan. Tempat, ukuran, dan warna setiap bagian akan menentukan apakah susunannya rapi. Begitu pula dalam karya seni.</p>
+              <h3 class="section-title">Bahan penyusun gambar</h3>
+              <div class="element-grid compact">
+                <div><i class="dot-demo"></i><span>Titik</span></div>
+                <div><i class="line-demo"></i><span>Garis</span></div>
+                <div><i class="shape-demo"></i><span>Bentuk</span></div>
+                <div><i class="plane-demo"></i><span>Bidang</span></div>
+                <div><i class="space-demo"></i><span>Ruang</span></div>
+                <div><i class="color-demo"></i><span>Warna</span></div>
+                <div><i class="texture-demo"></i><span>Tekstur</span></div>
+                <div><i class="value-demo"></i><span>Gelap-terang</span></div>
+              </div>
+              <div class="remember"><b>Ingat!</b> Objek utama adalah “apa yang digambar”. Komposisi adalah “bagaimana semuanya ditata”.</div>
+              <span class="page-number">4</span>
+            </div>
+          </section>
+        </article>
+
+        <article class="paper" data-sheet="3">
+          <section class="page front image-page" data-page="5" aria-label="Tiga jenis komposisi">
+            <div class="page-inner">
+              <div class="page-kicker"><span>04</span> Jenis Komposisi</div>
+              <h2>Tiga Cara Menata Objek</h2>
+              <img class="chapter-image" src="assets/tiga-jenis-komposisi.webp" alt="Anak menunjukkan tiga karya kertas: simetris, asimetris, dan radial">
+              <div class="three-types">
+                <div><b>1</b><strong>Simetris</strong><span>Kiri dan kanan serupa.</span></div>
+                <div><b>2</b><strong>Asimetris</strong><span>Berbeda, tetapi tetap terasa seimbang.</span></div>
+                <div><b>3</b><strong>Radial</strong><span>Memancar dari satu titik tengah.</span></div>
+              </div>
+              <p class="caption">Ketiganya sama-sama dapat menghasilkan karya yang indah. Pilihan jenis tergantung pesan dan perasaan yang ingin kamu tampilkan.</p>
+              <span class="page-number">5</span>
+            </div>
+          </section>
+
+          <section class="page back" data-page="6" aria-label="Komposisi simetris">
+            <div class="page-inner">
+              <div class="page-kicker"><span>05</span> Jenis 1</div>
+              <h2>Komposisi Simetris</h2>
+              <p class="lead"><strong>Simetris</strong> berarti objek di kiri dan kanan garis tengah memiliki bentuk, ukuran, dan posisi yang sama atau sangat serupa.</p>
+              <div class="art-demo symmetry-demo" aria-label="Contoh pola simetris">
+                <span class="axis-label">garis tengah</span>
+                <div class="axis"></div>
+                <i class="wing w1"></i><i class="wing w2"></i><i class="wing w3"></i><i class="wing w4"></i>
+                <i class="body"></i>
+              </div>
+              <div class="steps two-col">
+                <div><b>Terasa seperti</b><p>tenang, rapi, resmi, kokoh.</p></div>
+                <div><b>Contoh</b><p>kupu-kupu, wajah, motif gerbang, pola lipat.</p></div>
+              </div>
+              <h3 class="section-title">Percobaan lipat dan gunting</h3>
+              <ol class="short-steps">
+                <li>Lipat kertas warna seperti buku.</li>
+                <li>Gambar setengah bentuk di sisi lipatan.</li>
+                <li>Gunting dengan bantuan orang dewasa, lalu buka.</li>
+                <li>Tempel kedua sisi pada posisi yang sama.</li>
+              </ol>
+              <div class="safety"><span aria-hidden="true">✂</span><p>Gunakan gunting berujung tumpul dan selalu minta pendampingan orang dewasa.</p></div>
+              <span class="page-number">6</span>
+            </div>
+          </section>
+        </article>
+
+        <article class="paper" data-sheet="4">
+          <section class="page front" data-page="7" aria-label="Komposisi asimetris">
+            <div class="page-inner">
+              <div class="page-kicker"><span>06</span> Jenis 2</div>
+              <h2>Komposisi Asimetris</h2>
+              <p class="lead"><strong>Asimetris</strong> berarti sisi kanan dan kiri tidak sama bentuk, ukuran, atau posisinya, tetapi bobot visualnya tetap terasa seimbang.</p>
+              <div class="art-demo asymmetry-demo" aria-label="Contoh pola asimetris seimbang">
+                <i class="big-shape"></i>
+                <i class="small-shape s1"></i><i class="small-shape s2"></i><i class="small-shape s3"></i>
+                <span class="balance-line"></span>
+              </div>
+              <div class="visual-weight">
+                <div><span class="weight big">BESAR</span><p>Satu bentuk besar bisa terasa “berat”.</p></div>
+                <div class="equals">≈</div>
+                <div><span class="weight small">KECIL · KECIL · KECIL</span><p>Beberapa bentuk kecil dapat menyeimbangkannya.</p></div>
+              </div>
+              <div class="steps two-col">
+                <div><b>Terasa seperti</b><p>aktif, lincah, santai, mengejutkan.</p></div>
+                <div><b>Kunci</b><p>beda bukan berarti berantakan. Jarak dan warna tetap diatur.</p></div>
+              </div>
+              <details class="think-box">
+                <summary>Tantangan mata</summary>
+                <p>Bayangkan satu pohon besar di kiri. Apa yang bisa kamu taruh di kanan agar gambar tetap nyaman? Misalnya tiga burung kecil, matahari, dan awan.</p>
+              </details>
+              <span class="page-number">7</span>
+            </div>
+          </section>
+
+          <section class="page back" data-page="8" aria-label="Komposisi radial">
+            <div class="page-inner">
+              <div class="page-kicker"><span>07</span> Jenis 3</div>
+              <h2>Komposisi Radial</h2>
+              <p class="lead"><strong>Radial</strong> adalah susunan bentuk yang memancar, berputar, atau mengelilingi <strong>satu titik tengah</strong>.</p>
+              <div class="radial-demo" aria-label="Bentuk warna-warni memancar dari titik tengah">
+                <span class="radial-center"></span>
+                <i style="--r:0deg"></i><i style="--r:30deg"></i><i style="--r:60deg"></i><i style="--r:90deg"></i>
+                <i style="--r:120deg"></i><i style="--r:150deg"></i><i style="--r:180deg"></i><i style="--r:210deg"></i>
+                <i style="--r:240deg"></i><i style="--r:270deg"></i><i style="--r:300deg"></i><i style="--r:330deg"></i>
+              </div>
+              <div class="steps two-col">
+                <div><b>Contoh di alam</b><p>bunga, matahari, irisan jeruk, riak air.</p></div>
+                <div><b>Contoh karya</b><p>mandala sederhana, roset, mozaik lingkaran.</p></div>
+              </div>
+              <h3 class="section-title">Percobaan kertas radial</h3>
+              <ol class="short-steps">
+                <li>Lipat kertas mendatar, lalu tegak menjadi persegi kecil.</li>
+                <li>Buat guntingan sederhana pada sisi-sisinya.</li>
+                <li>Buka perlahan. Empat atau delapan bagian akan berulang mengitari pusat.</li>
+                <li>Tempel hasilnya tepat di tengah kertas dasar.</li>
+              </ol>
+              <span class="page-number">8</span>
+            </div>
+          </section>
+        </article>
+
+        <article class="paper" data-sheet="5">
+          <section class="page front" data-page="9" aria-label="Unsur-unsur seni rupa">
+            <div class="page-inner">
+              <div class="page-kicker"><span>08</span> Kotak Peralatan Mata</div>
+              <h2>Delapan Unsur Rupa</h2>
+              <p class="lead">Unsur rupa adalah “bahan visual” yang dapat kita pilih dan gabungkan saat menggambar.</p>
+              <div class="element-cards">
+                <div><b>•</b><strong>Titik</strong><p>Bagian terkecil; kumpulannya dapat membentuk pola.</p></div>
+                <div><b>〰</b><strong>Garis</strong><p>Lurus, lengkung, zigzag, tebal, atau tipis.</p></div>
+                <div><b>●</b><strong>Bentuk</strong><p>Wujud benda, misalnya bulat, kotak, atau bebas.</p></div>
+                <div><b>▰</b><strong>Bidang</strong><p>Daerah datar yang dibatasi garis atau warna.</p></div>
+                <div><b>◇</b><strong>Ruang</strong><p>Kesan dekat-jauh, depan-belakang, atau kedalaman.</p></div>
+                <div><b>◉</b><strong>Warna</strong><p>Memberi suasana: hangat, sejuk, ceria, atau tenang.</p></div>
+                <div><b>░</b><strong>Tekstur</strong><p>Kesan permukaan: halus, kasar, licin, atau berbulu.</p></div>
+                <div><b>◐</b><strong>Gelap-terang</strong><p>Membantu bentuk tampak bervolume dan bercahaya.</p></div>
+              </div>
+              <div class="mini-challenge"><b>Cari!</b> Pada halaman ini, temukan satu contoh garis, bentuk, warna, tekstur, dan gelap-terang.</div>
+              <span class="page-number">9</span>
+            </div>
+          </section>
+
+          <section class="page back" data-page="10" aria-label="Prinsip seni rupa bagian satu">
+            <div class="page-inner">
+              <div class="page-kicker"><span>09</span> Aturan Main Seni</div>
+              <h2>Prinsip Seni Rupa · Bagian 1</h2>
+              <p class="lead">Prinsip membantu kita mengatur unsur rupa agar semua bagian bekerja sebagai satu karya.</p>
+              <div class="principle-list">
+                <article><span>1</span><div><h3>Kesatuan <em>Unity</em></h3><p>Semua unsur saling berhubungan dan terasa satu keluarga, bukan berdiri sendiri-sendiri.</p></div></article>
+                <article><span>2</span><div><h3>Keseimbangan <em>Balance</em></h3><p>Bobot visual tidak terasa berat di satu sisi. Mata menjadi nyaman.</p></div></article>
+                <article><span>3</span><div><h3>Irama <em>Rhythm</em></h3><p>Pengulangan bentuk, garis, atau warna secara teratur sehingga karya terasa bergerak.</p></div></article>
+                <article><span>4</span><div><h3>Komposisi</h3><p>Penempatan semua unsur menjadi susunan yang teratur, serasi, dan bermakna.</p></div></article>
+              </div>
+              <div class="rhythm-strip" aria-label="Pola warna berulang"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+              <span class="page-number">10</span>
+            </div>
+          </section>
+        </article>
+
+        <article class="paper" data-sheet="6">
+          <section class="page front" data-page="11" aria-label="Prinsip seni rupa bagian dua">
+            <div class="page-inner">
+              <div class="page-kicker"><span>10</span> Aturan Main Seni</div>
+              <h2>Prinsip Seni Rupa · Bagian 2</h2>
+              <div class="principle-list small">
+                <article><span>5</span><div><h3>Proporsi <em>Perbandingan</em></h3><p>Membandingkan besar-kecil, panjang-pendek, luas-sempit, dan tinggi-rendah.</p></div></article>
+                <article><span>6</span><div><h3>Pusat Perhatian <em>Dominasi</em></h3><p>Membuat satu bagian paling menonjol melalui posisi, warna, ukuran, atau bentuk.</p></div></article>
+                <article><span>7</span><div><h3>Keselarasan <em>Harmoni</em></h3><p>Menyatukan perbedaan agar sesuai, tidak bertentangan, dan terasa serasi.</p></div></article>
+                <article><span>8</span><div><h3>Gradasi</h3><p>Perubahan warna atau nilai secara berangsur, misalnya muda menuju tua.</p></div></article>
+                <article><span>9</span><div><h3>Penekanan <em>Kontras</em></h3><p>Perbedaan kuat pada warna, bentuk, atau ukuran agar karya lebih hidup.</p></div></article>
+              </div>
+              <div class="principle-visuals">
+                <div class="gradation" aria-label="Gradasi dari terang ke gelap"></div>
+                <div class="contrast" aria-label="Satu lingkaran merah di antara lingkaran biru"><i></i><i></i><i></i><i></i><i></i></div>
+              </div>
+              <span class="page-number">11</span>
+            </div>
+          </section>
+
+          <section class="page back activity-page" data-page="12" aria-label="Aktivitas mengamati keseimbangan">
+            <div class="page-inner">
+              <div class="page-kicker"><span>11</span> Coba Kreatif</div>
+              <h2>Safari Keseimbangan</h2>
+              <p class="lead">Lihat benda atau lingkungan di sekitarmu. Catat mana yang seimbang dan mana yang perlu diperbaiki.</p>
+              <form class="observation-form" id="observation-form">
+                <div class="form-head"><span>No.</span><span>Seimbang</span><span>Tidak Seimbang</span></div>
+                <label><span>1</span><input name="balanced-1" aria-label="Contoh seimbang pertama" placeholder="contoh: meja"><input name="unbalanced-1" aria-label="Contoh tidak seimbang pertama" placeholder="contoh: pot miring"></label>
+                <label><span>2</span><input name="balanced-2" aria-label="Contoh seimbang kedua" placeholder="tulis di sini"><input name="unbalanced-2" aria-label="Contoh tidak seimbang kedua" placeholder="tulis di sini"></label>
+                <label><span>3</span><input name="balanced-3" aria-label="Contoh seimbang ketiga" placeholder="tulis di sini"><input name="unbalanced-3" aria-label="Contoh tidak seimbang ketiga" placeholder="tulis di sini"></label>
+                <label><span>4</span><input name="balanced-4" aria-label="Contoh seimbang keempat" placeholder="tulis di sini"><input name="unbalanced-4" aria-label="Contoh tidak seimbang keempat" placeholder="tulis di sini"></label>
+                <label><span>5</span><input name="balanced-5" aria-label="Contoh seimbang kelima" placeholder="tulis di sini"><input name="unbalanced-5" aria-label="Contoh tidak seimbang kelima" placeholder="tulis di sini"></label>
+              </form>
+              <div class="discussion-card"><b>Ceritakan</b><p>Pilih satu contoh. Mengapa menurutmu benda atau lingkungan itu seimbang? Apa yang bisa diperbaiki?</p></div>
+              <div class="save-note" id="save-note" role="status">Jawaban akan tersimpan otomatis.</div>
+              <span class="page-number">12</span>
+            </div>
+          </section>
+        </article>
+
+        <article class="paper" data-sheet="7">
+          <section class="page front" data-page="13" aria-label="Proyek kolase komposisi">
+            <div class="page-inner">
+              <div class="page-kicker"><span>12</span> Proyek Utama</div>
+              <h2>Buat Kolase Komposisimu</h2>
+              <div class="materials"><b>Bahan:</b><span>kertas warna</span><span>pensil</span><span>lem</span><span>gunting aman</span><span>kertas dasar</span></div>
+              <div class="project-steps">
+                <article><b>1</b><div><h3>Pilih jenis</h3><p>Simetris, asimetris, atau radial.</p></div></article>
+                <article><b>2</b><div><h3>Rencanakan</h3><p>Buat sketsa kecil. Tentukan pusat perhatian dan warna.</p></div></article>
+                <article><b>3</b><div><h3>Potong</h3><p>Siapkan bentuk-bentuk sederhana. Minta bantuan jika perlu.</p></div></article>
+                <article><b>4</b><div><h3>Susun dulu</h3><p>Coba beberapa posisi sebelum menempel.</p></div></article>
+                <article><b>5</b><div><h3>Periksa</h3><p>Apakah seimbang, menyatu, berirama, dan punya fokus?</p></div></article>
+                <article><b>6</b><div><h3>Tempel & bersihkan</h3><p>Gunakan lem secukupnya dan rapikan meja kerja.</p></div></article>
+              </div>
+              <div class="project-checks">
+                <label><input type="checkbox" data-save="project-plan"> Aku sudah memilih jenis komposisi.</label>
+                <label><input type="checkbox" data-save="project-focus"> Aku tahu bagian yang menjadi pusat perhatian.</label>
+                <label><input type="checkbox" data-save="project-clean"> Aku menjaga kebersihan dan memakai alat dengan aman.</label>
+              </div>
+              <div class="safety"><span aria-hidden="true">★</span><p>Pamerkan hasilnya. Minta teman atau orang tua menyebutkan bagian yang paling menarik dan alasannya.</p></div>
+              <span class="page-number">13</span>
+            </div>
+          </section>
+
+          <section class="page back image-page" data-page="14" aria-label="Pengayaan Alma Thomas">
+            <div class="page-inner">
+              <div class="page-kicker"><span>13</span> Kenalan dengan Seniman</div>
+              <h2>Alma Thomas & Warna Alam</h2>
+              <img class="chapter-image artist-image" src="assets/galeri-radial.webp" alt="Anak mengamati lukisan abstrak warna-warni berbentuk lingkaran dan membuat mozaik radial">
+              <p class="lead">Alma Thomas adalah pelukis dan guru dari Amerika yang terkenal dengan komposisi abstrak penuh warna, sering terinspirasi oleh bunga, cahaya, dan pemandangan dari atas.</p>
+              <div class="fact-row">
+                <div><b>1891</b><span>Lahir di Washington, D.C.</span></div>
+                <div><b>1924</b><span>Lulusan pertama seni rupa di Howard University.</span></div>
+                <div><b>1972</b><span>Mengadakan pameran tunggal penting di Whitney Museum.</span></div>
+              </div>
+              <div class="artist-note"><b>Amati caranya:</b> sapuan warna pendek disusun berulang menjadi baris atau lingkaran. Di sana ada irama, gradasi, pusat perhatian, dan harmoni.</div>
+              <p class="caption">Coba buat “taman warna” versimu sendiri. Gunakan ide dari alam tanpa menyalin karya orang lain.</p>
+              <span class="page-number">14</span>
+            </div>
+          </section>
+        </article>
+
+        <article class="paper" data-sheet="8">
+          <section class="page front quiz-page" data-page="15" aria-label="Kuis pilihan ganda">
+            <div class="page-inner">
+              <div class="page-kicker"><span>14</span> Uji Pemahaman</div>
+              <h2>Kuis Penjelajah · Bagian 1</h2>
+              <p class="lead">Pilih jawaban terbaik. Kamu boleh mencoba lagi jika belum tepat.</p>
+              <div class="quiz-list">
+                <fieldset class="quiz-item" data-question="q1"><legend>1. Cara menyusun unsur rupa agar teratur dan serasi disebut …</legend><div class="choices"><button type="button" data-answer="a">tekstur</button><button type="button" data-answer="b" data-correct="true">komposisi</button><button type="button" data-answer="c">ruang</button></div><p class="feedback" aria-live="polite"></p></fieldset>
+                <fieldset class="quiz-item" data-question="q2"><legend>2. Susunan yang kiri dan kanannya serupa disebut …</legend><div class="choices"><button type="button" data-answer="a" data-correct="true">simetris</button><button type="button" data-answer="b">asimetris</button><button type="button" data-answer="c">radial</button></div><p class="feedback" aria-live="polite"></p></fieldset>
+                <fieldset class="quiz-item" data-question="q3"><legend>3. Bentuk yang memancar dari satu titik tengah disebut …</legend><div class="choices"><button type="button" data-answer="a">kontras</button><button type="button" data-answer="b">asimetris</button><button type="button" data-answer="c" data-correct="true">radial</button></div><p class="feedback" aria-live="polite"></p></fieldset>
+                <fieldset class="quiz-item" data-question="q4"><legend>4. Pengulangan bentuk atau warna yang teratur adalah prinsip …</legend><div class="choices"><button type="button" data-answer="a">proporsi</button><button type="button" data-answer="b" data-correct="true">irama</button><button type="button" data-answer="c">tekstur</button></div><p class="feedback" aria-live="polite"></p></fieldset>
+                <fieldset class="quiz-item" data-question="q5"><legend>5. Perubahan warna secara berangsur disebut …</legend><div class="choices"><button type="button" data-answer="a" data-correct="true">gradasi</button><button type="button" data-answer="b">garis</button><button type="button" data-answer="c">bidang</button></div><p class="feedback" aria-live="polite"></p></fieldset>
+                <fieldset class="quiz-item" data-question="q6"><legend>6. Membuat satu bagian paling menonjol disebut …</legend><div class="choices"><button type="button" data-answer="a">kesatuan</button><button type="button" data-answer="b">ruang</button><button type="button" data-answer="c" data-correct="true">pusat perhatian</button></div><p class="feedback" aria-live="polite"></p></fieldset>
+              </div>
+              <span class="page-number">15</span>
+            </div>
+          </section>
+
+          <section class="page back quiz-page" data-page="16" aria-label="Kuis benar salah">
+            <div class="page-inner">
+              <div class="page-kicker"><span>15</span> Uji Pemahaman</div>
+              <h2>Kuis Penjelajah · Bagian 2</h2>
+              <div class="quiz-list true-false">
+                <fieldset class="quiz-item" data-question="q7"><legend>7. Asimetris selalu berarti berantakan.</legend><div class="choices"><button type="button" data-answer="a">Benar</button><button type="button" data-answer="b" data-correct="true">Salah</button></div><p class="feedback" aria-live="polite"></p></fieldset>
+                <fieldset class="quiz-item" data-question="q8"><legend>8. Komposisi yang baik membuat gambar lebih nyaman dilihat.</legend><div class="choices"><button type="button" data-answer="a" data-correct="true">Benar</button><button type="button" data-answer="b">Salah</button></div><p class="feedback" aria-live="polite"></p></fieldset>
+                <fieldset class="quiz-item" data-question="q9"><legend>9. Gelap-terang dapat membantu bentuk tampak bervolume.</legend><div class="choices"><button type="button" data-answer="a" data-correct="true">Benar</button><button type="button" data-answer="b">Salah</button></div><p class="feedback" aria-live="polite"></p></fieldset>
+                <fieldset class="quiz-item" data-question="q10"><legend>10. Menjaga hutan dan saluran air ikut menjaga keseimbangan alam.</legend><div class="choices"><button type="button" data-answer="a" data-correct="true">Benar</button><button type="button" data-answer="b">Salah</button></div><p class="feedback" aria-live="polite"></p></fieldset>
+              </div>
+              <div class="score-card">
+                <span class="score-star" aria-hidden="true">★</span>
+                <div><span>Skor sementara</span><strong id="score-value">0 / 10</strong><p id="score-message">Jawab semua pertanyaan untuk melihat hasilmu.</p></div>
+                <button type="button" id="reset-quiz">Ulangi Kuis</button>
+              </div>
+              <h3 class="section-title">Lengkapi dengan kata yang tepat</h3>
+              <div class="fill-prompts">
+                <label>Keseimbangan membuat karya tidak terasa <input data-save="fill-1" placeholder="…"></label>
+                <label>Komposisi radial memancar dari titik <input data-save="fill-2" placeholder="…"></label>
+                <label>Unsur yang memberi kesan kasar atau halus adalah <input data-save="fill-3" placeholder="…"></label>
+              </div>
+              <details class="think-box answer-key"><summary>Periksa jawaban isian</summary><p>Jawaban yang diharapkan: <strong>berat sebelah/timpang</strong>, <strong>tengah</strong>, dan <strong>tekstur</strong>.</p></details>
+              <span class="page-number">16</span>
+            </div>
+          </section>
+        </article>
+
+        <article class="paper" data-sheet="9">
+          <section class="page front reflection-page" data-page="17" aria-label="Soal HOTS dan refleksi">
+            <div class="page-inner">
+              <div class="page-kicker"><span>16</span> Berpikir Lebih Jauh</div>
+              <h2>HOTS & Refleksi</h2>
+              <div class="hots-list">
+                <label><b>1</b><span>Dari simetris, asimetris, dan radial, mana yang paling indah menurutmu? Jelaskan alasannya.</span><textarea data-save="hots-1" rows="2" placeholder="Menurutku … karena …"></textarea></label>
+                <label><b>2</b><span>Mengapa seniman perlu memahami prinsip seni rupa sebelum menyusun gambar?</span><textarea data-save="hots-2" rows="2" placeholder="Prinsip seni rupa membantu …"></textarea></label>
+                <label><b>3</b><span>Bayangkan gambar dengan satu pohon besar di kiri. Bagaimana kamu menyeimbangkan sisi kanan?</span><textarea data-save="hots-3" rows="2" placeholder="Aku akan menambahkan …"></textarea></label>
+              </div>
+              <h3 class="section-title">Aku sudah bisa …</h3>
+              <div class="reflection-checks">
+                <label><input type="checkbox" data-save="reflect-1"> menjelaskan arti komposisi.</label>
+                <label><input type="checkbox" data-save="reflect-2"> membedakan simetris, asimetris, dan radial.</label>
+                <label><input type="checkbox" data-save="reflect-3"> menyebutkan unsur dan prinsip seni rupa.</label>
+                <label><input type="checkbox" data-save="reflect-4"> membuat kolase dengan aman dan rapi.</label>
+                <label><input type="checkbox" data-save="reflect-5"> menjelaskan cara menjaga keseimbangan alam.</label>
+              </div>
+              <div class="profile-row"><span>Kemandirian</span><span>Kreativitas</span><span>Kolaborasi</span><span>Nalar Kritis</span></div>
+              <span class="page-number">17</span>
+            </div>
+          </section>
+
+          <section class="page back summary-page" data-page="18" aria-label="Ringkasan dan glosarium">
+            <div class="page-inner">
+              <div class="page-kicker"><span>17</span> Peta Ingatan</div>
+              <h2>Ringkasan Petualangan</h2>
+              <div class="summary-map">
+                <div class="map-center">KOMPOSISI</div>
+                <div class="map-branch b1"><b>Tujuan</b><span>rapi · seimbang · serasi · mudah dipahami</span></div>
+                <div class="map-branch b2"><b>Jenis</b><span>simetris · asimetris · radial</span></div>
+                <div class="map-branch b3"><b>Unsur</b><span>titik · garis · bentuk · bidang · ruang · warna · tekstur · gelap-terang</span></div>
+                <div class="map-branch b4"><b>Prinsip</b><span>kesatuan · keseimbangan · irama · komposisi · proporsi · fokus · harmoni · gradasi · kontras</span></div>
+              </div>
+              <h3 class="section-title">Glosarium mini</h3>
+              <dl class="glossary">
+                <div><dt>Abstrak</dt><dd>Karya yang tidak harus meniru bentuk nyata.</dd></div>
+                <div><dt>Bobot visual</dt><dd>Kesan “berat” yang ditimbulkan ukuran, warna, atau bentuk.</dd></div>
+                <div><dt>Kolase</dt><dd>Karya dari bahan yang ditempel menjadi susunan baru.</dd></div>
+                <div><dt>Dominasi</dt><dd>Bagian yang paling menonjol atau menjadi pusat perhatian.</dd></div>
+                <div><dt>Estetis</dt><dd>Memiliki nilai keindahan atau enak dipandang.</dd></div>
+                <div><dt>Serasi</dt><dd>Bagian-bagian yang cocok dan nyaman dilihat bersama.</dd></div>
+              </dl>
+              <span class="page-number">18</span>
+            </div>
+          </section>
+        </article>
+
+        <article class="paper" data-sheet="10">
+          <section class="page front finish-page" data-page="19" aria-label="Selesai belajar">
+            <div class="page-inner">
+              <div class="finish-stars" aria-hidden="true">✦ ★ ✦</div>
+              <span class="eyebrow">Petualangan Selesai</span>
+              <h2>Kamu Kini<br><em>Seniman Penata!</em></h2>
+              <p class="lead">Kamu sudah belajar melihat, membandingkan, menata, membuat, dan menjelaskan karya. Itu adalah kebiasaan penting seorang seniman.</p>
+              <div class="certificate-card">
+                <span>Piagam Mini</span>
+                <h3>Penjelajah Komposisi</h3>
+                <label>Nama <input id="learner-name" data-save="learner-name" placeholder="Tulis namamu"></label>
+                <p>telah menyelesaikan modul Seni Rupa Kelas 3 tentang komposisi.</p>
+              </div>
+              <div class="parent-note">
+                <b>Untuk pendamping</b>
+                <p>Ajak anak menjelaskan pilihannya, bukan hanya menilai hasil akhir. Pertanyaan sederhana seperti “bagian mana yang paling kuat?” membantu bahasa visual dan rasa percaya dirinya tumbuh.</p>
+              </div>
+              <button class="print-button" type="button" id="print-certificate">Cetak Piagam</button>
+              <span class="page-number">19</span>
+            </div>
+          </section>
+
+          <section class="page back back-cover" data-page="20" aria-label="Sampul belakang">
+            <div class="back-cover-pattern" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            <div class="back-cover-content">
+              <span class="brand-mark large" aria-hidden="true">✦</span>
+              <h2>Lihat dunia<br>dengan mata seniman.</h2>
+              <p>Setiap garis punya arah.<br>Setiap warna punya suasana.<br>Setiap susunan punya cerita.</p>
+              <button type="button" id="restart-book">Baca dari Awal</button>
+              <small>Modul ini disusun dari materi “Eksplorasi Komposisi” pada buku yang diberikan, lalu diperkaya dengan aktivitas interaktif.</small>
+            </div>
+          </section>
+        </article>
+      </div>
+    </div>
+
+    <nav class="page-controls" aria-label="Navigasi halaman">
+      <button class="nav-button" id="prev-button" type="button" disabled><span aria-hidden="true">←</span> Sebelumnya</button>
+      <div class="page-dots" id="page-dots" aria-hidden="true"></div>
+      <button class="nav-button primary" id="next-button" type="button">Berikutnya <span aria-hidden="true">→</span></button>
+    </nav>
+    <p class="keyboard-hint">Tip: gunakan tombol <kbd>←</kbd> dan <kbd>→</kbd> pada papan ketik.</p>
+  </main>
+
+  <dialog class="toc-dialog" id="toc-dialog" aria-labelledby="toc-title">
+    <div class="dialog-head">
+      <div><span class="eyebrow">Pilih tujuanmu</span><h2 id="toc-title">Daftar Isi</h2></div>
+      <button type="button" id="toc-close" aria-label="Tutup daftar isi">×</button>
+    </div>
+    <div class="toc-grid">
+      <button type="button" data-go-page="2"><b>01</b><span><strong>Misi Seniman</strong><small>Halaman 2</small></span></button>
+      <button type="button" data-go-page="3"><b>02</b><span><strong>Keseimbangan</strong><small>Halaman 3</small></span></button>
+      <button type="button" data-go-page="4"><b>03</b><span><strong>Arti Komposisi</strong><small>Halaman 4</small></span></button>
+      <button type="button" data-go-page="5"><b>04</b><span><strong>Tiga Jenis</strong><small>Halaman 5-8</small></span></button>
+      <button type="button" data-go-page="9"><b>05</b><span><strong>Unsur Rupa</strong><small>Halaman 9</small></span></button>
+      <button type="button" data-go-page="10"><b>06</b><span><strong>Prinsip Seni</strong><small>Halaman 10-11</small></span></button>
+      <button type="button" data-go-page="12"><b>07</b><span><strong>Aktivitas</strong><small>Halaman 12-13</small></span></button>
+      <button type="button" data-go-page="14"><b>08</b><span><strong>Alma Thomas</strong><small>Halaman 14</small></span></button>
+      <button type="button" data-go-page="15"><b>09</b><span><strong>Kuis</strong><small>Halaman 15-16</small></span></button>
+      <button type="button" data-go-page="17"><b>10</b><span><strong>Refleksi</strong><small>Halaman 17-18</small></span></button>
+    </div>
+  </dialog>
+
+  <div class="turn-cue" id="turn-cue" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
